@@ -1,7 +1,7 @@
 <svg><foreignObject>
     <div class="container">
       <h2 style="font-family: '8BitOperator', sans-serif;">welcome to</h2>
-      <h1 class="shortpie">&nbsp;.shortpie.'s</h1>
+      <h1 class="shortpie">.shortpie.'s</h1>
       <br><br>
       <img src="localspace.png" alt="LocalSpace!" class="logo" />
 
@@ -21,13 +21,6 @@
           </button>
         </div>
       </div>
-
-      <h5 id="discord-link" style="font-size: 23px; margin-bottom: 14px; margin-top: 32px;">
-        <br><a href="https://discord.gg/4nry3kY6Js" style="color: #5865F2;">
-          Join the Discord for development updates and other projects!
-        </a>
-      </h5>
-
       <p>
         <strong style="font-size: 20px; color: #557;">base homepage made by </strong>
         <a href="https://github.com/aukak" style="font-size: 20px; color: #007bff; text-decoration: underline;">bog</a>
