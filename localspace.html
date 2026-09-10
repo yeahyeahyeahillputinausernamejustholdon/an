@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>.shortpie.'s LocalSpace!</title>
+    <base href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/">
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/style.css" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/fav.ico" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 style="font-family: '8BitOperator', sans-serif;">welcome to</h2>
+      <h1 class="shortpie">&nbsp;.shortpie.'s</h1>
+      <br><br>
+      <img src="localspace.png" alt="LocalSpace!" class="logo" />
+
+      <div class="button-group">
+        <div class="chapter-buttons">
+          <button id="drweb" class="chapter-button-3">
+            <span class="button-label">DELTARUNEWeb</span>
+          </button>
+          <button id="utweb" class="chapter-button-1">
+            <span class="button-label">UNDERTALEWeb</span>
+          </button>
+        </div>
+
+        <div class="othersite-button">
+          <button id="abb" class="chapter-button-4">
+            <span class="button-label">Open in about:blank?</span>
+          </button>
+        </div>
+      </div>
+
+      <h5 id="discord-link" style="font-size: 23px; margin-bottom: 14px; margin-top: 32px;">
+        <br><a href="https://discord.gg/4nry3kY6Js" style="color: #5865F2;">
+          Join the Discord for development updates and other projects!
+        </a>
+      </h5>
+
+      <p>
+        <strong style="font-size: 20px; color: #557;">base homepage made by </strong>
+        <a href="https://github.com/aukak" style="font-size: 20px; color: #007bff; text-decoration: underline;">bog</a>
+      </p>
+    </div>
+
+    <div id="gameFrame" class="game-frame hidden"></div>
+    <script>
+        async function loadthingy(url) {
+          try {
+            const res = await fetch(`${url}/index.html?t=${Date.now()}`);
+            const html = await res.text();
+            document.open();
+            document.write(html);
+            document.close();
+          } catch (error) {
+            console.error('Error loading page:', error);
+          }
+        }
+
+        async function abb() {
+          try {
+            const res = await fetch(`https://cdn.jsdelivr.net/gh/1e295a49108e716ce8ab7eba0c8dca7d/9326265e4f1b14345a3bdab6f8ffad0e2e7ab3fda920c5f0f095f77359af00aeae22591c5bc4914c84c13d99eb62091d7ce7@main/index.html?t=${Date.now()}`);
+            const html = await res.text();
+            const persistentTitle = '\u200C';
+            document.open();
+            document.write(html);
+            document.close();
+            document.title = persistentTitle;
+          } catch (error) {
+            console.error('Error loading page:', error);
+          }
+        }
+
+      document.getElementById('drweb').addEventListener('click', () => loadthingy('drweb'));
+      document.getElementById('utweb').addEventListener('click', () => loadthingy('utweb'));
+      document.getElementById('abb').addEventListener('click', abb);
+    </script>
+  </body>
+</html>
